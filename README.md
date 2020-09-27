@@ -1,7 +1,7 @@
 # obs-v4l2sink-plugin-fedora
 Fedora 31 and 32 RPM package for [OBS Studio](https://obsproject.com/) [v4l2sink plugin](https://github.com/CatxFish/obs-v4l2sink/)
 
-The RPM has been created extracting the library from the available [Ubuntu package](https://github.com/CatxFish/obs-v4l2sink/releases/download/0.1.0/obs-v4l2sink.deb) from repo's releases. The `v4l2loopback` dependency has been resolved [Fedora Copr](https://copr.fedorainfracloud.org/) [repo](https://copr.fedorainfracloud.org/coprs/sentry/v4l2loopback/)
+The RPM has been created extracting the library from the available [Ubuntu package](https://github.com/CatxFish/obs-v4l2sink/releases/download/0.1.0/obs-v4l2sink.deb) from repo's releases. The `v4l2loopback` dependency has been resolved thanks to a [Fedora Copr](https://copr.fedorainfracloud.org/) [repo](https://copr.fedorainfracloud.org/coprs/sentry/v4l2loopback/)
 
 This will place the plugin inside `/usr/lib64/obs-plugins/v4l2sink.so` that can be used after the virtual camera device has been created.
 
