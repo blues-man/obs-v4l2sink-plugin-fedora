@@ -11,7 +11,8 @@ You have to load the module `v4l2loopback` before using the plugin from OBS.
 
 ## From Fedora Copr
 
-Install Fedora Copr repo to resolve all dependencies. It will install `obs-studio` package from [RPM Fusion](https://rpmfusion.org/) and `v4l2loopback` package from [copr/sentry](https://copr.fedorainfracloud.org/coprs/sentry/v4l2loopback/)
+I created a Fedora Copr repo for this RPM, in order to resolve all dependencies.
+It will install `obs-studio` package from [RPM Fusion](https://rpmfusion.org/) and `v4l2loopback` package from [copr/sentry](https://copr.fedorainfracloud.org/coprs/sentry/v4l2loopback/)
 
 ### Install RPM Fusion
 
