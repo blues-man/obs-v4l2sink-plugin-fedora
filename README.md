@@ -9,7 +9,19 @@ This will place the plugin inside `/usr/lib64/obs-plugins/v4l2sink.so` that can 
 
 ## From Fedora Copr
 
-Install Fedora Copr repo to resolve all dependencies. It will install `obs-studio` package from [RPM Fusion](https://rpmfusion.org/) and `v4l2loopback` package from [copr/sentry](https://copr.fedorainfracloud.org/coprs/sentry/v4l2loopback/) if those are not available
+Install Fedora Copr repo to resolve all dependencies. It will install `obs-studio` package from [RPM Fusion](https://rpmfusion.org/) and `v4l2loopback` package from [copr/sentry](https://copr.fedorainfracloud.org/coprs/sentry/v4l2loopback/)
+
+### Install RPM Fusion
+
+Follow doc for your Fedora version: https://rpmfusion.org/Configuration
+
+For Fedora 32:
+
+```
+$ sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-32.noarch.rpm
+```
+
+### Install obs-v4l2sink
 ```
 $ sudo dnf copr enable bluesman/obs-v4l2sink
 $ sudo dnf install --nogpgcheck obs-v4l2sink
@@ -23,25 +35,34 @@ The GPG check fails on rpmfusion and sentry packages, skipping for the moment wi
 
 Follow doc for your Fedora version: https://rpmfusion.org/Configuration
 
-Then install OBS:
-```
-$ sudo dnf install obs-studio
-```
-
 ### Install v4l2loopback
 
 Install from Copr
 
 ```
 $ sudo dnf copr enable sentry/v4l2loopback
-$ sudo dnf install v4l2loopback
 ```
 
-### Install obs-v4l2sink
+### Install obs-v4l2sink with DNF
+
+```
+$ sudo dnf install -y obs-v4l2sink-0.1.0-1.fc32.x86_64.rpm
+```
+
+### Install obs-v4l2sink with RPM
+
+Install `obs-studio` and `v4l2loopback`
+
+```
+$ dnf install -y obs-studio v4l2loopback
+```
+
+Install the RPM:
 
 ```
 $ rpm -ivh obs-v4l2sink-0.1.0-1.fc32.x86_64.rpm
 ```
+
 
 # Usage
 
