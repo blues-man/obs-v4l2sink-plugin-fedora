@@ -30,7 +30,7 @@ $ sudo dnf copr enable bluesman/obs-v4l2sink
 $ sudo dnf install --nogpgcheck obs-v4l2sink
 ```
 
-The GPG check fails on rpmfusion and sentry packages, skipping for the moment will let those install.
+The GPG check fails on `sentry` repo, skipping for the moment will let those install.
 
 ## From RPM (Fedora 32)
 
