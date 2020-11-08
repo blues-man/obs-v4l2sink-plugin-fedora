@@ -5,7 +5,7 @@ Summary:        OBS Studio output plugin for Video4Linux2 device
 
 License:        GPLv2 
 URL:            https://github.com/CatxFish/obs-v4l2sink/
-Source0:        https://github.com/blues-man/obs-v4l2sink/obs-v4l2sink-0.1.0.tar.gz 
+Source0:        https://github.com/blues-man/obs-v4l2sink-plugin-fedora/raw/master/obs-v4l2sink-0.1.0.tar.gz
 
 Requires:       obs-studio
 Requires:       v4l2loopback  
